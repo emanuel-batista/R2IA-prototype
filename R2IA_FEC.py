@@ -22,9 +22,6 @@ while True:
     text = f"Pessoas: {len(faces)}"
     cv2.putText(img, text, (10, 30), font, 1, (255, 255, 255), 2)
 
-    for (x, y, w, h) in faces:
-        cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
-
     if len(faces) >= 5:
         print("Que tanto de gente")
     # Display
